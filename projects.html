@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects - Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#607AFB", "background-light": "#f5f6f8", "background-dark": "#0f1323"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d191c] dark:text-[#e0e9ec] antialiased">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 w-full border-b border-[#e7f1f4] dark:border-[#1e3a40] bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-6 lg:px-10">
+<div class="flex items-center gap-4 text-[#0d191c] dark:text-[#e0e9ec]">
+<div class="size-8 rounded-full bg-primary flex items-center justify-center text-[#0d191c]">
+<span class="material-symbols-outlined" style="font-size: 20px; font-variation-settings: 'FILL' 1, 'wght' 700;">code</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium text-primary" href="projects.html">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="resume.html">Resume</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="mailto:ayomide25.01@gmail.com" class="flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-bold text-[#0d191c] hover:bg-primary/90 transition-colors">
+                        Hire Me
+                    </a>
+<!-- Mobile Menu Button -->
+<button class="md:hidden flex items-center justify-center p-2 text-[#0d191c] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1280px] w-full flex-1 px-4 lg:px-10">
+<!-- Page Header -->
+<section class="mb-12 lg:mb-16">
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl font-black leading-[1.1] tracking-[-0.033em] lg:text-5xl text-[#0d191c] dark:text-white">
+                                            My Projects
+                                        </h1>
+<p class="text-lg text-[#498e9c] dark:text-[#8baab3] max-w-2xl">
+                                            A curated collection of work spanning frontend, full-stack, and specialized solutions. Each project represents my commitment to quality, scalability, and user-centered design.
+                                        </p>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="scroll-mt-24" id="projects">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<h2 class="text-[28px] font-bold leading-tight tracking-[-0.015em] mb-2 text-[#0d191c] dark:text-white">All Projects</h2>
+<p class="text-[#498e9c] dark:text-[#8baab3]">Filter by category to explore different types of work.</p>
+</div>
+<!-- Filters -->
+<div class="flex gap-2 flex-wrap">
+    <button data-filter="all" class="filter-btn flex h-9 items-center justify-center gap-x-2 rounded-full bg-[#0d191c] dark:bg-primary px-5 transition-colors">
+        <p class="text-white dark:text-[#0d191c] text-sm font-medium">All</p>
+    </button>
+    <button data-filter="embedded" class="filter-btn flex h-9 items-center justify-center gap-x-2 rounded-full bg-[#e7f1f4] dark:bg-[#1e3a40] px-5 hover:bg-[#dbe9ee] dark:hover:bg-[#2a4e56] transition-colors">
+        <p class="text-[#0d191c] dark:text-[#e0e9ec] text-sm font-medium">Embedded</p>
+    </button>
+    <button data-filter="full-stack" class="filter-btn flex h-9 items-center justify-center gap-x-2 rounded-full bg-[#e7f1f4] dark:bg-[#1e3a40] px-5 hover:bg-[#dbe9ee] dark:hover:bg-[#2a4e56] transition-colors">
+        <p class="text-[#0d191c] dark:text-[#e0e9ec] text-sm font-medium">Full-stack</p>
+    </button>
+    <button data-filter="mechanical" class="filter-btn flex h-9 items-center justify-center gap-x-2 rounded-full bg-[#e7f1f4] dark:bg-[#1e3a40] px-5 hover:bg-[#dbe9ee] dark:hover:bg-[#2a4e56] transition-colors">
+        <p class="text-[#0d191c] dark:text-[#e0e9ec] text-sm font-medium">Mechanical</p>
+    </button>
+</div>
+</div>
+<!-- Project Grid (your real projects) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8" id="projectsGrid">
+
+    <!-- Hybrid Biometric Attendance System -->
+    <article data-category="full-stack embedded" class="project-card group flex flex-col rounded-xl overflow-hidden bg-white dark:bg-[#16292d] shadow-sm transition-all duration-300 border border-[#e7f1f4] dark:border-[#1e3a40]">
+        <div class="flex flex-col flex-1 p-5">
+            <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-[#0d191c] dark:text-white">Hybrid Biometric Attendance System</h3>
+                <a class="text-[#498e9c] hover:text-primary transition-colors" href="#">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                </a>
+            </div>
+            <p class="text-[#498e9c] dark:text-[#8baab3] text-sm leading-relaxed mb-4 flex-1">
+                IoT-based attendance system using RFID, fingerprint, and facial recognition. Built with ESP32 and PostgreSQL for real-time logging via WebSockets; includes admin frontend and secure backend authentication.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">ESP32</span>
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">PostgreSQL</span>
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">WebSockets</span>
+            </div>
+            <div class="flex gap-3 mt-auto">
+                <a class="flex-1 flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-[#0d191c] text-sm font-bold hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
+                <a class="flex-1 flex items-center justify-center gap-2 rounded-lg h-10 px-4 border border-[#e7f1f4] dark:border-[#2a4e56] text-[#0d191c] dark:text-white text-sm font-bold hover:bg-[#e7f1f4] dark:hover:bg-[#1e3a40] transition-colors" href="#">Code</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- CNC Writing Machine -->
+    <article data-category="embedded mechanical" class="project-card group flex flex-col rounded-xl overflow-hidden bg-white dark:bg-[#16292d] shadow-sm transition-all duration-300 border border-[#e7f1f4] dark:border-[#1e3a40]">
+        <div class="flex flex-col flex-1 p-5">
+            <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-[#0d191c] dark:text-white">CNC Writing Machine</h3>
+                <a class="text-[#498e9c] hover:text-primary transition-colors" href="#">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                </a>
+            </div>
+            <p class="text-[#498e9c] dark:text-[#8baab3] text-sm leading-relaxed mb-4 flex-1">
+                A 2-axis CNC machine for writing automation using G-code and Arduino. Mechanical parts modeled in SolidWorks; led the team from concept to demo.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">Arduino</span>
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">SolidWorks</span>
+                <span class="px-2.5 py-1 rounded bg-[#e7f1f4] dark:bg-[#1e3a40] text-xs font-semibold text-[#0d191c] dark:text-[#e0e9ec]">G-code</span>
+            </div>
+            <div class="flex gap-3 mt-auto">
+                <a class="flex-1 flex items-center justify-center gap-2 rounded-lg h-10 px-4 bg-primary text-[#0d191c] text-sm font-bold hover:bg-primary/90 transition-colors" href="#">Live Demo</a>
+                <a class="flex-1 flex items-center justify-center gap-2 rounded-lg h-10 px-4 border border-[#e7f1f4] dark:border-[#2a4e56] text-[#0d191c] dark:text-white text-sm font-bold hover:bg-[#e7f1f4] dark:hover:bg-[#1e3a40] transition-colors" href="#">Code</a>
+            </div>
+        </div>
+    </article>
+
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-[#e7f1f4] dark:border-[#1e3a40] bg-white dark:bg-[#101f22] py-10 px-10">
+<div class="mx-auto flex flex-col items-center justify-center gap-6 max-w-[960px] text-center">
+<div class="flex items-center gap-2 text-[#0d191c] dark:text-[#e0e9ec]">
+<div class="size-6 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] font-bold text-[#0d191c]">code</span>
+</div>
+<span class="text-lg font-bold">Aderemi Oluwaseyi</span>
+</div>
+<div class="flex gap-8">
+<a class="text-[#498e9c] dark:text-[#8baab3] hover:text-primary transition-colors text-sm font-medium" href="index.html">Home</a>
+<a class="text-[#498e9c] dark:text-[#8baab3] hover:text-primary transition-colors text-sm font-medium" href="projects.html">Projects</a>
+<a class="text-[#498e9c] dark:text-[#8baab3] hover:text-primary transition-colors text-sm font-medium" href="resume.html">Resume</a>
+<a class="text-[#498e9c] dark:text-[#8baab3] hover:text-primary transition-colors text-sm font-medium" href="#contact">Contact</a>
+</div>
+<div class="flex gap-4">
+<a class="text-[#0d191c] dark:text-white hover:text-primary transition-colors" href="#">
+<span class="sr-only">GitHub</span>
+<!-- Generic Code Icon for Github representation -->
+<span class="material-symbols-outlined">terminal</span>
+</a>
+<a class="text-[#0d191c] dark:text-white hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<!-- Generic Work Icon for LinkedIn representation -->
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="text-[#0d191c] dark:text-white hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<!-- Generic Chat Icon for Twitter representation -->
+<span class="material-symbols-outlined">chat_bubble</span>
+</a>
+</div>
+<p class="text-[#498e9c] dark:text-[#8baab3] text-sm">
+                    © 2025 Aderemi Oluwaseyi. Mechatronics Engineer.
+                </p>
+</div>
+</footer>
+</div>
+<script>
+    (function(){
+        const buttons = document.querySelectorAll('[data-filter]');
+        const cards = document.querySelectorAll('[data-category]');
+        function setActiveBtn(active){
+            buttons.forEach(b=>{
+                b.classList.remove('bg-[#0d191c]','dark:bg-primary');
+                b.classList.add('bg-[#e7f1f4]','dark:bg-[#1e3a40]');
+                const p = b.querySelector('p');
+                if(p){ p.classList.remove('text-white'); p.classList.add('text-[#0d191c]'); }
+            });
+            active.classList.remove('bg-[#e7f1f4]','dark:bg-[#1e3a40]');
+            active.classList.add('bg-[#0d191c]','dark:bg-primary');
+            const p = active.querySelector('p');
+            if(p){ p.classList.remove('text-[#0d191c]'); p.classList.add('text-white'); }
+        }
+        buttons.forEach(btn=>{
+            btn.addEventListener('click', ()=>{
+                const filter = btn.getAttribute('data-filter');
+                setActiveBtn(btn);
+                cards.forEach(card=>{
+                    const cats = (card.dataset.category||"").split(' ');
+                    if(filter === 'all' || cats.includes(filter)){
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        const init = document.querySelector('[data-filter="all"]');
+        if(init) setActiveBtn(init);
+    })();
+</script>
+</body></html>
